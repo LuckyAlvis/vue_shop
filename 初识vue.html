@@ -1,0 +1,28 @@
+CTYPE html>
+<html lang="en">
+	    <head>
+		            <meta charset="UTF-8">
+			            <title>Title</title>
+				        </head>
+					    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+					        <body>
+							        <div id="root">
+									            单向数据绑定：<input type="text" v-bind:value="name">
+										                <br>
+												            双向数据绑定：<input type="text" v-model:value="name">
+													            </div>
+														            <script type="text/javascript">
+																                Vue.config.productionTip = false //阻止VUE在启动时生成生产提示。
+
+            //创建Vue实例
+            new Vue({
+		                    el: '#root', //el用于指定当前vue实例为哪个容器服务，值为css选择器字符串
+		                    data: {
+					                        name: '尚硅谷1',
+					                        url: 'http://47.106.168.110:8081/user/list'
+					                    }
+		                })
+        </script>
+	    </body>
+</html>
+
